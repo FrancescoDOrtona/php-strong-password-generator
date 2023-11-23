@@ -1,5 +1,18 @@
 <?php
 $password_length = $_GET["pass-length"] ?? null;
+
+function randomPasswordOfLength(&$password_length)
+{
+    $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.:,;-_*+';
+    $password = array();
+    $alphaLength = strlen($alphabet) - 1;
+    for ($i = 0; $i < $password_length; $i++) {
+        $n = rand(0, $alphaLength);
+        $password[] = $alphabet[$n];
+    }
+    return implode($password);
+}
+// var_dump(randomPasswordOfLength($password_length));
 ?>
 
 
@@ -23,6 +36,12 @@ $password_length = $_GET["pass-length"] ?? null;
             <form action="" method="get">
                 <input type="number" name="pass-length" id="number">
             </form>
+        </div>
+        <div class="password">
+            <div class="password__text">
+                <h3>Password:</h3>
+                <strong><?php echo randomPasswordOfLength($password_length) ?></strong>
+            </div>
         </div>
     </div>
 </body>

@@ -34,5 +34,29 @@ header p{
 #number{
     padding: 10px 30px;
     text-align: center;
-    font-size: 20px
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
+
+.password{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.password__text{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 40px 80px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 21px 7px rgba(0, 0, 0, 0.4);
+}
+
+.password__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+    
