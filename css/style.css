@@ -71,4 +71,10 @@ header p{
     align-items: center;
     gap: 20px;
 }
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     

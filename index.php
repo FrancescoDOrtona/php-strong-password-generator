@@ -1,8 +1,15 @@
 <?php
+session_start();
 include __DIR__ . '/partials/functions.php';
+
 $password_length = $_GET["pass-length"] ?? null;
 
 // var_dump(randomPasswordOfLength($password_length));
+
+if ($password_length) {
+    header('Location: show.php');
+    $_SESSION['pass-length'] = $password_length;
+}
 ?>
 
 
