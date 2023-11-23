@@ -33,15 +33,15 @@ if ($password_length) {
             <form action="" method="get">
                 <input type="number" name="pass-length" min="0" id="number" placeholder="Number">
                 <input type="submit" value="Generate" id="submit">
-                <p class="password-length">Password length: <?php echo $password_length ?></p>
+                <!-- <p class="password-length">Password length: <?php echo $password_length ?></p> -->
             </form>
         </div>
-        <div class="password">
+        <!-- <div class="password">
             <div class="password__text">
                 <h3>Password:</h3>
                 <strong><?php echo randomPasswordOfLength($password_length); ?></strong>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 

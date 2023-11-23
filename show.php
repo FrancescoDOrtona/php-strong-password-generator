@@ -18,6 +18,7 @@ $password_length = $_SESSION['pass-length'];
             <a href="index.php">Home Page</a>
         </div>
         <header>
+            <p class="password-length">Password length: <?php echo $password_length ?></p>
             <div class="password">
                 <div class="password__text">
                     <h3>Password:</h3>
