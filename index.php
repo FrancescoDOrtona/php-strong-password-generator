@@ -24,8 +24,9 @@ $password_length = $_GET["pass-length"] ?? null;
         </header>
         <div class="form-section">
             <form action="" method="get">
-                <input type="number" name="pass-length" id="number">
+                <input type="number" name="pass-length" min="0" id="number" placeholder="Number">
                 <input type="submit" value="Generate" id="submit">
+                <p class="password-length">Password length: <?php echo $password_length ?></p>
             </form>
         </div>
         <div class="password">
