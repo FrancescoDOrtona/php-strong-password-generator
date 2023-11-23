@@ -34,7 +34,12 @@ header p{
 #number{
     padding: 10px 30px;
     text-align: center;
-    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+#submit{
+    padding: 10px 15px;
     border: 1px solid gray;
     border-radius: 10px;
 }

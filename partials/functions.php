@@ -2,12 +2,12 @@
 
 function randomPasswordOfLength(&$password_length)
 {
-    $alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.:,;-_*+';
+    $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890.:,;-_*+';
     $password = array();
-    $alphaLength = strlen($alphabet) - 1;
+    $charLength = strlen($characters) - 1;
     for ($i = 0; $i < $password_length; $i++) {
-        $n = rand(0, $alphaLength);
-        $password[] = $alphabet[$n];
+        $n = rand(0, $charLength);
+        $password[] = $characters[$n];
     }
     return implode($password);
 }
