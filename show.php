@@ -14,6 +14,9 @@ $password_length = $_SESSION['pass-length'];
 </head>
 <body class="center">
     <div class="container">
+        <div class="home-page">
+            <a href="index.php">Home Page</a>
+        </div>
         <header>
             <div class="password">
                 <div class="password__text">

@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
 .container{
     max-width: 1024px;
     margin: 0 auto;
@@ -43,6 +48,7 @@ header p{
     border: 1px solid gray;
     border-radius: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .password-length{
@@ -76,5 +82,18 @@ header p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.home-page{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.home-page:focus{
+    color: black;
 }
     
